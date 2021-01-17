@@ -9,7 +9,7 @@ const Player = ({songs,setSongs, setCurrentSong, currentSong, isPlaying,setIsPla
     // effect 
     useEffect(() => {
         setSongs(songs.map(song => (song._id === currentSong._id ? {...song, active: true} : {...song, active: false})))
-    }, [currentSong])
+    }, [setSongs,songs,currentSong])
     
     // ref 
     // event handlers
