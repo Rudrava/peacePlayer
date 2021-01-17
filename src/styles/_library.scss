@@ -10,7 +10,7 @@
   transform: translateX(-100%);
   transition: all 0.5s ease;
   opacity: 0;
-  h1 {
+  h2 {
     padding: 1.5rem;
   }
 }
@@ -20,12 +20,12 @@
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-
+  transition: all 0.3s ease-in-out;
   img {
     width: 15%;
   }
   &:hover {
-    background-color: rgb(138, 214, 228);
+    background-color: rgba(141, 199, 209, 0.699);
   }
 }
 
@@ -53,7 +53,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(56, 183, 221, 0.747);
+  background-color: rgba(218, 113, 95, 0.856);
 }
 .selected {
   background-color: rgb(138, 214, 228);
@@ -62,4 +62,10 @@
 .active {
   transform: translateX(0);
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }

@@ -41,7 +41,7 @@ function App() {
       playAudio(isPlaying, audioRef)
   }
   return (
-    <div className="App">
+    <div className={`App ${libraryStatus ? 'libraryActive' : ""}`} >
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song 
         currentSong={currentSong}

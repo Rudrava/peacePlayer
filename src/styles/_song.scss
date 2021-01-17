@@ -24,3 +24,11 @@
     font-style: 3rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .songContainer {
+    img {
+      width: 60%;
+    }
+  }
+}

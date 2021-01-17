@@ -15,3 +15,12 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      margin-top: 0.8rem;
+      z-index: 100;
+    }
+  }
+}
