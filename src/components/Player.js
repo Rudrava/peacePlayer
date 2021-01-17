@@ -8,8 +8,9 @@ import {playAudio} from "../utils"
 const Player = ({songs,setSongs, setCurrentSong, currentSong, isPlaying,setIsPlaying, audioRef, setSongInfo, songInfo}) => {
     // effect 
     useEffect(() => {
+        console.log("here");
         setSongs(songs.map(song => (song._id === currentSong._id ? {...song, active: true} : {...song, active: false})))
-    }, [setSongs,songs,currentSong])
+    }, [currentSong])
     
     // ref 
     // event handlers
